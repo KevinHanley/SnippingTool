@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ACME Support</title>
+        
+        <link rel="stylesheet" href="navbar.css" type="text/css"/>
+        <link rel="stylesheet" href="pagedesign.css" type="text/css"/>
+        
+        <!-- setting webpage favicon -->
+        <link rel="shortcut icon" type="image/ico" href="Images/acmefavicon.ico"/>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                
+                $('.pic1').mouseenter(function(){
+                    $('#pic1').css("background-color", "LightBlue");
+                });
+                
+                $('.pic1').mouseleave(function(){
+                    $('#pic1').css("background-color", "transparent");
+                });
+                
+                $('.pic2').hover(function(){
+                    $('#pic2').css("background-color", "LightBlue");
+                });
+                
+                $('.pic2').mouseleave(function(){
+                    $('#pic2').css("background-color", "transparent");
+                });
+                
+                $('.pic3').hover(function(){
+                    $('#pic3').css("background-color", "LightBlue");
+                });
+                
+                $('.pic3').mouseleave(function(){
+                    $('#pic3').css("background-color", "transparent");
+                });
+            
+                
+            });
+        </script>
+        
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                 
+                <img class="logo" src="Images/Snipping Tool Logo2.jpg">
+                
+                <nav>
+                    <ul>
+                        <li><a href="">New Booking</a></li>
+                        <li><a href="" >Edit Booking</a></li>
+                        <li><a href="l">Delete Booking</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        
+        
+        
+        <div class="main-pic-container">
+            
+            <div class="pic1">
+                <div class="pic-inside" id="pic1">
+                    <h1>New Booking</h1>
+                </div>
+            </div>
+            
+            <div class="pic2">
+                <div class="pic-inside" id="pic2">
+                    <h1>Edit Booking</h1>
+                </div>
+            </div>
+            
+            <div class="pic3">
+                <div class="pic-inside" id="pic3">
+                    <h1>Delete Booking</h1>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </body>
+</html>
