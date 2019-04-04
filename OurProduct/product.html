@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snipping Tool - Product</title>
+        
+        <link rel="stylesheet" href="../navbar.css" type="text/css"/>
+        <link rel="stylesheet" href="productdesign.css" type="text/css"/>
+        
+        <!-- setting webpage favicon -->
+        <link rel="shortcut icon" type="image/ico" href="Images/.ico"/>
+        
+        <!-- Google icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                
+                $('.logo').click(function(){
+                    window.location = "../home.html";
+                });
+                
+                var productconEl = $('div.product_container2'),
+                productconElOffset = productconEl.offset().top/2,
+                documentEl = $(document);
+                
+                documentEl.on('scroll', function() {
+                    if ( documentEl.scrollTop() > productconElOffset && productconEl.hasClass('hidden') ) productconEl.removeClass('hidden');
+                });
+                
+                
+                
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                 
+                <img class="logo" src="../Images/Snipping Tool Logo2.jpg">
+                
+                <nav>
+                    <ul>
+                        <li><a href="product.html">Our Product</a></li>
+                        <li><a href="../" >About Us</a></li>
+                        <li><a href="../">FAQ</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        
+        
+        <!-- adding content -->
+        <div class="product_container1">
+            <h1 class="product_message">
+                Reliability.
+                <br>
+                Security.
+                <br>
+                Passion.
+            </h1>
+            
+            <i class="material-icons">arrow_downward</i>
+        </div>
+        
+        
+        <div class="product_container2 hidden">
+            <h1 class="product_guarantee">
+                No matter the challenge, we'll be there every step of the way.
+            </h1>
+        </div>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
