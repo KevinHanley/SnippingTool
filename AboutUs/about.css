@@ -37,7 +37,7 @@
     height: 80%;
     position: absolute;
     top: 100%;
-    background-image: url("../Images/barber-passion.jpg");
+    background-image: url("../Images/barber-shop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,7 +91,7 @@
     height: 80%;
     position: absolute;
     top: 220%;
-    background-image: url("../Images/barber-tools.jpg");
+    background-image: url("../Images/barber-pole.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
