@@ -24,10 +24,14 @@
                 
                 var productconEl = $('div.product_container2'),
                 productconElOffset = productconEl.offset().top/2,
+                productconElSecond = $('div.product_container4'),
+                productconElOffsetSecond = productconElSecond.offset().top/1.2,
+                
                 documentEl = $(document);
                 
                 documentEl.on('scroll', function() {
                     if ( documentEl.scrollTop() > productconElOffset && productconEl.hasClass('hidden') ) productconEl.removeClass('hidden');
+                    if ( documentEl.scrollTop() > productconElOffsetSecond && productconElSecond.hasClass('hidden2') ) productconElSecond.removeClass('hidden2');
                 });
                 
                 
@@ -46,7 +50,7 @@
                 <nav>
                     <ul>
                         <li><a href="product.html">Our Product</a></li>
-                        <li><a href="../" >About Us</a></li>
+                        <li><a href="../AboutUs/about.html" >About Us</a></li>
                         <li><a href="../">FAQ</a></li>
                     </ul>
                 </nav>
@@ -58,21 +62,52 @@
         <!-- adding content -->
         <div class="product_container1">
             <h1 class="product_message">
-                Reliability.
+                Style
                 <br>
-                Security.
+                &
                 <br>
-                Passion.
+                Choice
             </h1>
             
             <i class="material-icons">arrow_downward</i>
         </div>
         
         
+        
+        
         <div class="product_container2 hidden">
             <h1 class="product_guarantee">
-                No matter the challenge, we'll be there every step of the way.
+                Here a Snipping Tool we want to make your life better!
             </h1>
+        </div>
+        
+        
+        
+        
+        <div class="product_container3">
+            <h1 class="company_info1">Our Product</h1>
+            
+            <p class="company_info2">
+            Our newly launched app we change the way you get a haircut. Simply open the app and create an account.
+            Once your in you can book haircuts from a number of places all across Cork City!
+            </p>
+        </div>
+        
+        
+        
+        <div class="product_container4 hidden2">
+            <h1 class="product_guarantee2">
+                We've got all your needs covered.
+            </h1>
+        </div>
+        
+        
+        <div class="product_container5">
+            <h1 class="company_info1">Your Options</h1>
+            
+            <p class="company_info2">
+            Everyone can choose from an ever increasing list of styles, highlights, extras and more! Best of all, you can choose the location, date and time.... so no more queues!
+            </p>
         </div>
         
         

@@ -3,9 +3,10 @@
     height: calc(100% - 80px);
     top: 80px;
     position: fixed;
-    background-image: url("../Images/tasks-calendar.jpg");
+    background-image: url("../Images/barber-chairs.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .product_message{
@@ -13,7 +14,7 @@
     top: 10%;
     left: 70%;
     width: 20%;
-    color: #000;
+    color: #FFF;
     font-size: 400%;
 }
 
@@ -36,7 +37,7 @@
     height: 80%;
     position: absolute;
     top: 100%;
-    background-image: url("../Images/man_board.jpeg");
+    background-image: url("../Images/barber-passion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,4 +60,67 @@
     width: 35%;
     color: #FFF;
     font-size: 400%;
+}
+
+.product_container3{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 180%;
+    background-color: rgb(204, 51, 51);
+    color: #FFF;
+}
+
+.company_info1{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 36%;
+    font-size: 400%;
+}
+
+.company_info2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 36%;
+}
+
+.product_container4{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 220%;
+    background-image: url("../Images/barber-tools.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.product_container4 h1{
+    transition: all 0.8s ease;
+}
+
+/* code for the text that appears upon scrolling */
+.product_container4.hidden2 h1{
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+
+.product_guarantee2{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 35%;
+    color: #FFF;
+    font-size: 400%;
+}
+
+.product_container5{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 300%;
+    background-color: rgb(25, 148, 230);
+    color: #FFF;
 }
